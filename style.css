@@ -11,36 +11,74 @@
   margin-top: -360px
 }
 
-#monkey{
-  background: url('img/monkey.png');
+.monkey{
+  background: url('img/monkey.png')no-repeat;
   position: absolute;
   width: 161px;
   height: 235px;
   bottom:0;
   right: 50%;
   background-repeat: round;
-}
 
-@-moz-keyframes monkey {
-  from {
-    margin-left:100%;
-    width:300%
-  }
-      
-  to {
-    margin-left:0%;
-    width:100%;
-  }
+
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -moz-animation-name: monkey;
+  -webkit-animation-name: monkey;
+  animation-name: monkey;
+  -moz-animation-iteration-count: 3;
+  -webkit-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+  -moz-animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
 
 @-webkit-keyframes monkey {
   from {
-    margin-left:100%;
-    width:300%
+    margin-bottom: 0%;
+    left : 40%;
+    transform: scale(1, 1);
   }
-  
+
   to {
-   margin-left:0%;
-   width:100%;
+    margin-bottom: 200px;
+    left: 50%;
+    transform: scale(0.5, 0.5);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
