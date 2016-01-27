@@ -44,3 +44,10 @@
    width:100%;
   }
 }
+
+
+@keyframes Size_Monkey {
+    from, to { width: 100px;}
+    25%, 75% { width: 200px;}
+    50%      { width: 50px;}
+}
