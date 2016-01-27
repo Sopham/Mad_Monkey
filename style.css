@@ -1,6 +1,44 @@
 #jungle{
+  width: 1280px;
+  height: 720px;
+  background: url('img/jungle.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  margin-left: -640px;
+  margin-top: -360px
+}
 
-	background: url('img/jungle.jpg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+#monkey{
+  background: url('img/monkey.png');
+  position: absolute;
+  width: 161px;
+  height: 235px;
+  background-repeat: round;
+}
+
+@-moz-keyframes monkey {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+      
+  to {
+    margin-left:0%;
+    width:100%;
+  }
+}
+
+@-webkit-keyframes monkey {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+  
+  to {
+   margin-left:0%;
+   width:100%;
+  }
 }
