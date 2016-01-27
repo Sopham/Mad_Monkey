@@ -16,6 +16,8 @@
   position: absolute;
   width: 161px;
   height: 235px;
+  bottom:0;
+  right: 50%;
   background-repeat: round;
 }
 
