@@ -8,7 +8,17 @@
   top: 50%;
   position: absolute;
   margin-left: -640px;
-  margin-top: -360px
+  margin-top: -360px;
+  z-index: 1;
+}
+
+.door{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background: url('img/door.png');
+  position: absolute;
+  z-index: 3;
 }
 
 .monkey{
@@ -19,35 +29,71 @@
   bottom:0;
   right: 50%;
   background-repeat: round;
+  z-index: 2;
 
+  /* ANIMATION 1 */
 
-  -moz-animation-duration: 3s;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+  -moz-animation-duration: 9s;
+  -webkit-animation-duration: 9s;
+  animation-duration: 9s;
+
   -moz-animation-name: monkey;
   -webkit-animation-name: monkey;
   animation-name: monkey;
-  -moz-animation-iteration-count: 3;
-  -webkit-animation-iteration-count: 3;
-  animation-iteration-count: 3;
-  -moz-animation-direction: alternate;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
+  
+  -moz-animation-iteration-count: 9;
+  -webkit-animation-iteration-count: 9;
+  animation-iteration-count: 9;
+
 }
 
 @-webkit-keyframes monkey {
+  0%{
+      margin-bottom: 0%;
+      left : 40%;
+      transform: scale(1, 1);
+    } 
+
+  20%{
+      margin-bottom: 180px;
+      left: 52%;
+      transform: scale(0.5, 0.5);
+    } 
+
+  40%{
+      margin-bottom: 225px;
+      left: 46%;
+      transform: scale(0.4, 0.4);
+    }
+  60%{
+      margin-bottom: 250px;
+      left: 35%;
+      transform: scale(0.3, 0.3);
+    }
+  80%{
+      margin-bottom: 320px;
+      left: 30%;
+      transform: scale(0.2, 0.2);
+    } 
+  100%{
+      margin-bottom: 370px;
+      left: 30%;
+      transform: scale(0.1, 0.1);
+    } 
+}
+
+/*@-webkit-keyframes monkey_ {
   from {
-    margin-bottom: 0%;
-    left : 40%;
+    right : 40%;
     transform: scale(1, 1);
   }
 
   to {
-    margin-bottom: 200px;
-    left: 50%;
+    margin-bottom: 180px;
+    right: 80%;
     transform: scale(0.5, 0.5);
   }
-}
+}*/
 
 
 
