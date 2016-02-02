@@ -1,14 +1,30 @@
-function keyd(ev){
 
-		console.log(ev.keyCode);
+//TEST 1
+// $('.monkey').bind('keydown', function (e) {
+//     if(e.keyCode === 38 || ev.keyCode === 40) {
+//         $(this).addClass('keycode');
+//     }
+//}); 
 
-		var monkey = document.getElementById('monkey');
 
-		if(ev.keyCode === 38 && === 40){
-			monkey.css("");
-		}
-	}
+//TEST 2
+// $(document).keydown(function(ev){
+//     if (ev.keyCode === 38 || ev.keyCode === 40) { 
+//        $('.monkey').addClass ('keycode');
 
-	var b = document.getElementsByTagName('body')[0];
+//     }
+// });
 
-	b.addEventListener('keydown', keyd);
+
+
+//TEST 3
+// function keyd(ev){
+
+// 	console.log(ev.keyCode);
+
+// 	var _monkey = document.getElementById('monkey');
+
+// 	if(ev.keyCode === 38 || ev.keyCode === 40){
+// 		_monkey.className += "keycode";
+// 	}
+// }

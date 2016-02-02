@@ -49,12 +49,14 @@
 
 @-webkit-keyframes monkey {
   0%{
+      z-index: 4;
       margin-bottom: 0%;
       left : 40%;
       transform: scale(1, 1);
     } 
 
   20%{
+      z-index: 2;
       margin-bottom: 180px;
       left: 52%;
       transform: scale(0.5, 0.5);
@@ -74,13 +76,16 @@
       margin-bottom: 320px;
       left: 30%;
       transform: scale(0.2, 0.2);
+      opacity: 1;
     } 
   100%{
       margin-bottom: 370px;
       left: 30%;
       transform: scale(0.1, 0.1);
+      opacity: 0;
     } 
 }
+
 
 /*@-webkit-keyframes monkey_ {
   from {
@@ -95,10 +100,33 @@
   }
 }*/
 
+.keycode{
 
+  background: url('img/monkey.png')no-repeat;
+  position: absolute;
+  width: 161px;
+  height: 235px;
+  bottom:0;
+  right: 50%;
+  background-repeat: round;
+  z-index: 2;
+}
 
+@-webkit-keyframes keycode {
 
+  0%{
+      bottom: 0;
+    } 
 
+  50%{
+      bottom: 20%;
+  }
+
+  100%{
+      bottom: 0;
+  }
+
+}
 
 
 
